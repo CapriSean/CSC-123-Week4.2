@@ -1,0 +1,31 @@
+package week_four;
+
+public class Exercise_2 {
+
+	public static void main(String[] args) {
+
+		enum Day {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}
+		
+		Day faveday = Day.FRIDAY;
+		
+		System.out.println(faveday);
+		
+		System.out.println(faveday.ordinal());
+		
+		 if (Day.SATURDAY.compareTo(faveday) > 0) {
+			 System.out.println("My favorite day is not the last day of the week.");
+		 } else {
+			 System.out.println("My favorite day is the last day of the week.");
+		 }
+		 
+		 if (Day.WEDNESDAY.compareTo(faveday) > 0){
+			 System.out.println("My favorite day is before wednesday");
+		 } else if (Day.WEDNESDAY.compareTo(faveday) < 0) {
+			 System.out.println("My favorite day is after wednesday"); 
+		 } else {
+			 System.out.println("My favorite day is on wednesday");
+		 }
+		
+	}
+
+}
